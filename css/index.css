@@ -144,8 +144,8 @@ body {
   font-size: 1.5em;
 }
 .intro-section img {
-  width: 17%;
-  margin-left: 75%;
+  width: 25%;
+  margin-left: 60%;
 }
 .exp-section {
   display: flex;
@@ -153,15 +153,46 @@ body {
   border: 1px solid black;
   width: 100%;
 }
-.exp-section .exp-div {
+.exp-section div {
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
   border: 1px solid black;
   width: 40%;
   justify-content: center;
+}
+.exp-section div h2 {
+  font-size: 2em;
+  justify-content: center;
+}
+.exp-section div p {
+  font-size: 1.2em;
 }
 .skills-section {
   display: flex;
   border: 1px solid black;
 }
+.skills-section .qualification {
+  border: 1px solid black;
+}
+.skills-section .skills {
+  border: 1px solid black;
+}
 .skills-section h2 {
   font-size: 2em;
+  border: 1px solid black;
+  width: 50%;
+}
+footer {
+  display: flex;
+  border: 1px solid red;
+  margin-top: 3%;
+  justify-content: center;
+  height: 20%;
+}
+footer h3 {
+  font-size: 1.5em;
+}
+footer p {
+  border: 1px solid black;
 }
