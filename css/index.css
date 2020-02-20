@@ -177,6 +177,7 @@ body {
 .exp-section div h2 {
   font-size: 2em;
   justify-content: center;
+  margin-left: 10%;
 }
 .exp-section div p {
   font-size: 1.2em;
@@ -191,21 +192,52 @@ body {
 .skills-section .skills {
   width: 20%;
   padding: 2%;
+  margin-left: 10%;
 }
 .skills-section h2 {
   font-size: 2em;
   width: 50%;
 }
 footer {
-  display: flex;
-  border: 1px solid red;
+  padding: 5%;
   margin-top: 3%;
-  justify-content: center;
-  height: 20%;
+  margin-left: 33%;
+  width: 30%;
+  background-color: lightgrey;
 }
-footer h3 {
+footer .ed-info p {
+  height: 60%;
+  width: 40%;
+}
+footer .ed-underline {
   font-size: 1.5em;
+  border-bottom: 1px solid black;
 }
-footer p {
-  border: 1px solid black;
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+    background-color: lightblue;
+  }
+  img {
+    display: none;
+  }
+  .head-class {
+    justify-content: center;
+  }
+  .intro-section {
+    justify-content: center;
+  }
+  .mobi-size {
+    padding: 5%;
+    width: 100%;
+    font-size: 1em;
+  }
+  .skills-section {
+    justify-content: center;
+    padding-top: 40%;
+    padding-bottom: 30%;
+  }
+  .skills-section .skills {
+    width: 100%;
+  }
 }

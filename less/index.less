@@ -88,8 +88,10 @@ body{
 	margin-left: 10%;
 }
 
+@introcolor: lightgrey;
+
 .intro-section {
-	background-color: lightgrey;
+	background-color: @introcolor;
 	// border: 1px solid black;
 	display:flex;
 	padding: 4%;
@@ -115,7 +117,7 @@ img{
 
 
 // experience paragraph style
- @hfontsize: 2em;
+@hfontsize: 2em;
 
 .exp-section {
 	display:flex;
@@ -133,6 +135,7 @@ div {
 h2 {
   font-size: @hfontsize;
   justify-content: center;
+  margin-left: 10%;
 }
 p{
 	font-size: 1.2em;
@@ -156,7 +159,8 @@ p{
 		// border: 1px solid black;
 		width: 20%;
 		padding: 2%;
-	
+		margin-left:10%;
+		
 	} 
 
 
@@ -170,25 +174,81 @@ p{
 } // closing bracket for .skills-section nest
 
 // footer section
-footer{
-	display:flex;
-	border: 1px solid red;
-	// padding: 5%;
+footer {
+
+	padding: 5%;
 	margin-top:3%;
-	justify-content: center;
-	height: 20%;
-	
-h3{
-	font-size: 1.5em;
+	margin-left: 33%;
+	width: 30%;
+	background-color: @introcolor;	
+
+.ed-info {
+	p{
+		height: 60%;
+		width: 40%;
+	}
 }
 
-p{
-	border: 1px solid black;
+ 
+	
+.ed-underline{
+	font-size: 1.5em;
+	border-bottom: 1px solid black;
+	
+	
+	
 }
+
+
 } //end footer section
 
 
+@media(max-width: 500px){	
+	body{
+	width:100%;	
+	background-color: lightblue;
+	
+}
+	img {
+		display:none;
+	}
 
+	.head-class {
+		justify-content: center;
+	}
+
+	.intro-section{
+		justify-content: center;
+		
+	}
+
+	.mobi-size{
+		padding: 5%;
+		width: 100%;
+		font-size: 1em;
+		
+
+		
+	}
+
+	.skills-section{
+		justify-content: center;
+		padding-top: 40%;
+		padding-bottom: 30%;
+		
+
+
+	.skills{
+		width:100%;
+		
+	}	
+	
+	}
+    
+
+}
+
+}
 
 
 
