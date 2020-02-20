@@ -183,19 +183,17 @@ body {
 }
 .skills-section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center ;
-  border: 1px solid black;
   height: 20%;
   padding: 10%;
 }
 .skills-section .skills {
-  border: 1px solid black;
   width: 20%;
+  padding: 2%;
 }
 .skills-section h2 {
   font-size: 2em;
-  border: 1px solid black;
   width: 50%;
 }
 footer {
