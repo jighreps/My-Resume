@@ -88,22 +88,25 @@ body{
 	margin-left: 10%;
 }
 
+// variable introcolor
 @introcolor: lightgrey;
 
 .intro-section {
 	background-color: @introcolor;
-	// border: 1px solid black;
 	display:flex;
 	padding: 4%;
 h1{
 	font-size: 3em;
-	// border: 1px solid black;
+	padding: 4%;
+	margin: 10%;
 	
 }
 
 p{
 	font-size:1em;
 	font-weight: bold;
+	padding: 4%;
+	margin-left:1%;
 
 }
 
@@ -114,15 +117,17 @@ img{
 }
 
 
-
+.img-div{
+	background-color: lightblue;
+}
 
 // experience paragraph style
+// variable hfontsize
 @hfontsize: 2em;
 
 .exp-section {
 	display:flex;
 	justify-content: center;
-	// border: 1px solid black;
 	width: 100%;
 div {
 	display:flex;
@@ -142,40 +147,41 @@ p{
 }
 }
 } // end of .exp div  class
-
 // end experience paragraph style
 
 
+
+
 // skills and qualification paragraphs
+
 .skills-section {
 	display:flex;
 	justify-content: center;
-	align-items: center ;
-	// border: 1px solid black;
-	height: 20%;
-	padding: 10%;
+		
 	
-.skills {
+.skills, h2 {
 		// border: 1px solid black;
+		display:flex;
+		flex-direction: column;
+		justify-content: space-evenly;
 		width: 20%;
 		padding: 2%;
-		margin-left:10%;
+		.img-div(); //mixin used for skills section
 		
 	} 
 
 
 	
-	h2 {
-		font-size: 2em;
-		// border: 1px solid black;
-		width: 50%;
+h2 {
+	font-size: 2em;
+	// border: 1px solid black;
+	width: 50%;
 				
-	} 
-} // closing bracket for .skills-section nest
+} 
+ } // closing bracket for .skills-section nest
 
 // footer section
 footer {
-
 	padding: 5%;
 	margin-top:3%;
 	margin-left: 33%;
@@ -202,13 +208,17 @@ footer {
 
 } //end footer section
 
-
+// media query
 @media(max-width: 500px){	
 	body{
 	width:100%;	
 	background-color: lightblue;
 	
+
 }
+
+
+
 	img {
 		display:none;
 	}
@@ -222,14 +232,6 @@ footer {
 		
 	}
 
-	.mobi-size{
-		padding: 5%;
-		width: 100%;
-		font-size: 1em;
-		
-
-		
-	}
 
 	.skills-section{
 		justify-content: center;
@@ -248,7 +250,7 @@ footer {
 
 }
 
-}
+
 
 
 
