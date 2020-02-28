@@ -49,11 +49,209 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+
+*{
+ 	box-sizing: border-box;
+	
 }
 
 html, body {
     height: 100%;
 }
+// end reset
+
+
+
+// start of css/less code
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+
+// header/nav section
+.head-class{
+	display:flex;
+	justify-content: flex-end;
+	font-size: 1.1em;
+	
+nav a{
+	text-decoration: none;
+}	
+	
+} //end of header/nav section
+
+body{
+	width: 80%;
+	margin-left: 10%;
+}
+
+// variable introcolor
+@introcolor: lightgrey;
+
+.intro-section {
+	background-color: @introcolor;
+	display:flex;
+	padding: 4%;
+h1{
+	font-size: 3em;
+	padding: 4%;
+	margin: 10%;
+	
+}
+
+p{
+	font-size:1em;
+	font-weight: bold;
+	padding: 4%;
+	margin-left:1%;
+
+}
+
+img{
+	width: 25%;
+	margin-left: 60%;
+}
+}
+
+
+.img-div{
+	background-color: lightblue;
+}
+
+// experience paragraph style
+// variable hfontsize
+@hfontsize: 2em;
+
+.exp-section {
+	display:flex;
+	justify-content: center;
+	width: 100%;
+div {
+	display:flex;
+	flex-direction: column;
+	padding: 4%;
+	// border: 1px solid black;
+	width: 40%;
+	justify-content: center;
+
+h2 {
+  font-size: @hfontsize;
+  justify-content: center;
+  margin-left: 10%;
+}
+p{
+	font-size: 1.2em;
+}
+}
+} // end of .exp div  class
+// end experience paragraph style
+
+
+
+
+// skills and qualification paragraphs
+
+.skills-section {
+	display:flex;
+	justify-content: center;
+		
+	
+.skills, h2 {
+		// border: 1px solid black;
+		display:flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		width: 20%;
+		padding: 2%;
+		.img-div(); //mixin used for skills section
+		
+	} 
+
+
+	
+h2 {
+	font-size: 2em;
+	// border: 1px solid black;
+	width: 50%;
+				
+} 
+ } // closing bracket for .skills-section nest
+
+// footer section
+footer {
+	padding: 5%;
+	margin-top:3%;
+	margin-left: 33%;
+	width: 30%;
+	background-color: @introcolor;	
+
+.ed-info {
+	p{
+		height: 60%;
+		width: 40%;
+	}
+}
+
+ 
+	
+.ed-underline{
+	font-size: 1.5em;
+	border-bottom: 1px solid black;
+	
+	
+	
+}
+
+
+} //end footer section
+
+// media query
+@media(max-width: 500px){	
+	body{
+	width:100%;	
+	background-color: lightblue;
+	
+
+}
+
+
+
+	img {
+		display:none;
+	}
+
+	.head-class {
+		justify-content: center;
+	}
+
+	.intro-section{
+		justify-content: center;
+		
+	}
+
+
+	.skills-section{
+		justify-content: center;
+		padding-top: 40%;
+		padding-bottom: 30%;
+		
+
+
+	.skills{
+		width:100%;
+		
+	}	
+	
+	}
+    
+
+}
+
+
+
+
+
 
