@@ -192,6 +192,7 @@ body {
 .skills-section {
   display: flex;
   justify-content: center;
+  padding: 3%;
 }
 .skills-section .skills,
 .skills-section h2 {
@@ -199,7 +200,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   width: 20%;
-  padding: 2%;
+  padding: 3%;
   background-color: lightblue;
 }
 .skills-section h2 {
@@ -209,17 +210,16 @@ body {
 footer {
   padding: 5%;
   margin-top: 3%;
-  margin-left: 33%;
+  margin-left: 35%;
   width: 30%;
   background-color: lightgrey;
-}
-footer .ed-info p {
-  height: 60%;
-  width: 40%;
 }
 footer .ed-underline {
   font-size: 1.5em;
   border-bottom: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 @media (max-width: 500px) {
   body {
